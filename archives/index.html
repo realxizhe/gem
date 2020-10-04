@@ -169,7 +169,7 @@
   <article class="mdui-card mdui-m-b-5 mdui-hoverable">
     <a href="/2020/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2%E2%80%94%E2%80%94%E5%88%9D%E7%AB%A0/">
       <header class="mdui-card-media mdui-ripple">
-        <img src="/images/random/material-3.png" style="max-height: 240px;">
+        <img src="/images/random/material-13.png" style="max-height: 240px;">
         <div class="mdui-card-media-covered">
           <div class="mdui-card-primary">
             <div class="mdui-card-primary-title">我的第一篇博客——初章</div>
@@ -222,6 +222,25 @@
     Copyright &copy; 2020 - 2020 Gem Hermit<br>
     <a href="https://cloud.bago.ink" target="_blank" class="mdui-text-color-white" style="text-decoration:none" >贝谷云</a> 提供计算支持
     
+    <script>
+      $(document).ready(function () {
+  
+          var int = setInterval(fixCount, 50);  // 50ms周期检测函数
+          var pvcountOffset = 80000;  // 初始化首次数据
+          var uvcountOffset = 20000;
+  
+          function fixCount() {
+              if (document.getElementById("busuanzi_container_site_pv").style.display != "none") {
+                  $("#busuanzi_value_site_pv").html(parseInt($("#busuanzi_value_site_pv").html()) + pvcountOffset);
+                  clearInterval(int);
+              }
+              if ($("#busuanzi_container_site_pv").css("display") != "none") {
+                  $("#busuanzi_value_site_uv").html(parseInt($("#busuanzi_value_site_uv").html()) + uvcountOffset); // 加上初始数据 
+                  clearInterval(int); // 停止检测
+              }
+          }
+      });
+  </script>
   </div>
 </footer>
   <button id="gotop" class="mdui-fab mdui-fab-fixed mdui-fab-hide mdui-color-theme-accent mdui-ripple"><i class="mdui-icon material-icons">arrow_upward</i></button>
