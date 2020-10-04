@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang="zh-CN,en,default">
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
@@ -15,13 +15,14 @@
   <meta name="description" content="afsdfsdf">
 <meta property="og:type" content="article">
 <meta property="og:title" content="我的第一篇博客——初章">
-<meta property="og:url" content="https://gem.bago.ink/2020/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2%E2%80%94%E2%80%94%E5%88%9D%E7%AB%A0/index.html">
+<meta property="og:url" content="https://gem.bago.ink/2020/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2%E2%80%94%E2%80%94%E5%88%9D%E7%AB%A0/">
 <meta property="og:site_name" content="杂谈小站">
 <meta property="og:description" content="afsdfsdf">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2020-10-03T12:03:51.000Z">
 <meta property="article:modified_time" content="2020-10-03T12:11:15.685Z">
 <meta property="article:author" content="宝石居士">
+<meta property="article:tag" content="gem,hermit,宝石居士,博客,blog,居士,宝石,宝石gem">
 <meta name="twitter:card" content="summary">
 
   <meta name="keywords" content="">
@@ -64,7 +65,7 @@
   <header id="header" class="mdui-appbar mdui-appbar-fixed mdui-appbar-scroll-hide mdui-appbar-inset">
   <div class="mdui-toolbar mdui-color-theme">
     <a href="javascript:;" class="mdui-btn mdui-btn-icon" mdui-drawer="{target: '#sidebar', swipe: true}"><i class="mdui-icon material-icons">menu</i></a>
-    <a href="/" class="mdui-typo-headline">杂谈小站</a>
+    <a href="/" class="mdui-typo-headline" mdui-tooltip="{content: '长按切换黑暗模式'}">杂谈小站</a>
     <div class="mdui-toolbar-spacer"></div>
     <a href="javascript:;" class="mdui-btn mdui-btn-icon" mdui-dialog="{target: '#search'}" mdui-tooltip="{content: '搜索'}"><i class="mdui-icon material-icons">search</i></a>
     <a href="/atom.xml" class="mdui-btn mdui-btn-icon" mdui-tooltip="{content: 'RSS订阅'}"><i class="mdui-icon material-icons">rss_feed</i></a>
@@ -84,7 +85,7 @@
     <div class="mdui-grid-tile-actions">
       <div class="mdui-grid-tile-text">
         <div class="mdui-grid-tile-title">宝石居士</div>
-        <div class="mdui-grid-tile-subtitle"><i class="mdui-icon material-icons">art_track</i></div>
+        <div class="mdui-grid-tile-subtitle"><i class="mdui-icon material-icons">art_track</i>学有所为 振兴中华</div>
       </div>
       
     </div>
@@ -145,10 +146,6 @@
 
   <div class="mdui-list" mdui-collapse="{accordion: true}">
     
-      <a href="/tagcloud" class="mdui-list-item mdui-ripple">标签云</a>
-    
-      <a href="/gallery" class="mdui-list-item mdui-ripple">画廊</a>
-    
     <div class="mdui-collapse-item">
       <div class="mdui-collapse-item-header mdui-list-item mdui-ripple">
         <div class="mdui-list-item-content">友情链接</div>
@@ -156,8 +153,8 @@
       </div>
       <div class="mdui-collapse-item-body mdui-list mdui-list-dense">
         
+          <a href="https://bago.ink" target="_blank" class="mdui-list-item mdui-p-l-2 mdui-text-color-theme-accent mdui-ripple" style="justify-content: center;">贝谷-新一代智能上网导航</a>
         
-          <a href="javascript:;" class="mdui-list-item mdui-p-l-2 mdui-text-color-theme mdui-ripple" style="justify-content: center;">链接为空</a>
         
       </div>
     </div>
@@ -170,7 +167,7 @@
   <style>#main article .mdui-card-content .center-block{display:block!important;margin-right:auto!important;margin-left:auto!important}</style>
   <article class="mdui-card mdui-m-b-5">
     <header class="mdui-card-media">
-      <img src="/images/random/material-3.png" style="max-height: 240px;">
+      <img src="/images/random/material-10.png" style="max-height: 240px;">
       <div class="mdui-card-media-covered">
         <div class="mdui-card-primary">
           <div class="mdui-card-primary-title">我的第一篇博客——初章</div>
@@ -186,7 +183,7 @@
             
             <li class="mdui-menu-item" disabled>
               
-                <img src="http://qr.liantu.com/api.php?w=246&m=10&text=https://gem.bago.ink/2020/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2%E2%80%94%E2%80%94%E5%88%9D%E7%AB%A0/">
+                <img src="https://chart.googleapis.com/chart?cht=qr&chs=246x246&chl=https://gem.bago.ink/2020/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2%E2%80%94%E2%80%94%E5%88%9D%E7%AB%A0/&chld=M|2">
               
             </li>
           </ul>
@@ -220,6 +217,10 @@
       <p>afsdfsdf</p>
 
       
+        <div class="mdui-m-y-2 mdui-text-center">
+          <button class="mdui-fab mdui-color-deep-orange mdui-text-color-white mdui-ripple" mdui-dialog="{target: '#donate'}" mdui-tooltip="{content: '打赏', position: 'top'}"><i class="mdui-icon material-icons">thumb_up</i></button>
+        </div>
+      
       <blockquote>
         
         <strong>本文链接：</strong><br><a href="https://gem.bago.ink/2020/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2%E2%80%94%E2%80%94%E5%88%9D%E7%AB%A0/">https://gem.bago.ink/2020/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2%E2%80%94%E2%80%94%E5%88%9D%E7%AB%A0/</a>
@@ -229,6 +230,22 @@
       
       
     </footer>
+    
+      <div class="mdui-dialog" id="donate">
+        <div class="mdui-tab mdui-tab-centered">
+          
+            <a href="#donate-0" class="mdui-ripple">打赏通道未开通</a>
+          
+        </div>
+        
+        
+          <div id="donate-0" class="mdui-p-a-2 mdui-typo mdui-text-center">
+            
+              <a href="https://bago.ink" target="_blank">>> 打赏通道未开通</a>
+            
+          </div>
+        
+      </div>
     
   </article>
   
