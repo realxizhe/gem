@@ -73,8 +73,10 @@
 </header>
 <div class="mdui-dialog" id="search">
   
-    <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="请输入关键字"><input type="hidden" name="sitesearch" value="https://gem.bago.ink"></form>
-    <div class="search-result"></div>
+    <div class="search-form">
+      <input type="search" class="search-form-input" placeholder="请输入关键字">
+    </div>
+    <div class="search-result" data-resource="/search.xml"></div>
   
 </div>
   <aside id="sidebar" class="mdui-drawer mdui-drawer-full-height">
@@ -183,7 +185,7 @@
             
             <li class="mdui-menu-item" disabled>
               
-                <img src="https://chart.googleapis.com/chart?cht=qr&chs=246x246&chl=https://gem.bago.ink/2020/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2%E2%80%94%E2%80%94%E5%88%9D%E7%AB%A0/&chld=M|2">
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAT4AAAE+CAAAAAAxUyPsAAAEzUlEQVR42u3aQXbbMAwEUN//0u0BGskDDOWk7dfKT4lF8nPhEcDXL1dxvRDgw4cPnwsfPnz4XPjw/SV8r/j64kF/3L/6//tn3n+++v/8/tWcd2vHhw8fPnz4er43P9XB8pK/5pNOZrjb1KvZJmvHhw8fPnz4zvJNh8njSL7sHDSJPtNvJavAhw8fPnz4Ps/XvJwnkWg6w/tR7leBDx8+fPjw/WS++ylOp5tHll2x/n6e+PDhw4cP3/fyTSGmQMlrfF5k3xUXDqwdHz58+PDhq/ny1vW/9/mj5/vw4cOHD99/z9df09AwPYK2e34SSpbrxYcPHz58+Aq+6Y/91RR3RfNpYGru54X7N5uKDx8+fPjwFXwJx7SJPo04u/bAKY6qWI8PHz58+PAd6vPmP//Jd5Nwc/+t3YGzJvTgw4cPHz58T/MlE0oOpfXbkAeOZAOm8xwX6/Hhw4cPH74VXxMsEu7+0Ni0kTAthUT38eHDhw8fvprviQXv2up9EX8ayA4U6/Hhw4cPH75Vnzf5+Z8WxHOgaZk+OfS2u/9mXHz48OHDh6/my3/sm+b3tKXdh5W8EJ8X7vHhw4cPH76Gbwo3ff3eNbCbcacRZ1xEwIcPHz58+Aq+/IBXH3R2RfldC3/XeIjQ8eHDhw8fvppvSjk9IpY315PY8ZnW+LEDavjw4cOHD9+uSF03radYu43M57bExYcPHz58+B4r1j9XUDhVWM+P1jXrwocPHz58+M7y5QM3cWT6Sr+LIE0rPZonPnz48OHDV/O9htcuxOzGmo6eb+F0RHz48OHDh6/n26HkJfWmUJ4fSpu28KviBT58+PDhw1fz9bHj1CJ3n5vok6Djw4cPHz58n+RrXsh3T8vRB+3t1VhRyQAfPnz48OEb8iUR5Gyr+1jp/PZ+E3Qu548PHz58+PAVfPmr/qk4sivH79rh07ZEtP348OHDhw9fwbcrAewa59OnTXHPxqzlATV8+PDhw4cvDi79Qa4ksiTR4bmQNF0pPnz48OHD9wRf38yevqLvItG0JZAHqTyu4cOHDx8+fD1fHjjOttLz4LI7Tjctf1S5Dx8+fPjw4YuL9buiebLg+xiRB5SmiN9wf/FXfPjw4cOHr+BbPqIoH0zpm+CSb3w+Ij58+PDhw3eKbzfAE+GjOaCWRKXmu/jw4cOHD1/PlxwIm5a8d0fBGrj8cNs0MOHDhw8fPnxP803v5wvIj5edCh9NZKlOGeDDhw8fPnwXbfLpdHvcaYt9B7oragyK9fjw4cOHD9+QbzeVaSs6L8rvtmq3omW5AR8+fPjw4TvE1xwUu3/Cbnua5ndejEjmiQ8fPnz48J3i272052Flin72sNp0xKjEgA8fPnz48BV802t6/GtXCMhL57sNa1oC+PDhw4cPX8M3DQ1nyabF/b4dPh0LHz58+PDhe4JvWpq/L4vn9LujaWc3PnfAhw8fPnz4zvLlYWLXYs8Pq+WF+N0zd80AfPjw4cOH7/N8eSk/f0XfHUprmuhVuR8fPnz48OH7IN80muTN6enid636JtDgw4cPHz58Z/nyYn0eUKYHxU7RNHHqzZbjw4cPHz58Nd+xQvYQMZ9D85I/ncObzcCHDx8+fPgKPtf0wocPHz58Lnz48OFz4cP3g6/fu+H8+7mRgHYAAAAASUVORK5CYII=">
               
             </li>
           </ul>
